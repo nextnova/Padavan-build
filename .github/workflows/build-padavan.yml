@@ -95,7 +95,7 @@ jobs:
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_FAT=n" >> .config#
-        echo "CONFIG_FIRMWARE_ENABLE_EXFAT=n" >> .config#
+        echo "CONFIG_FIRMWARE_ENABLE_EXFAT=y" >> .config#
         echo "CONFIG_FIRMWARE_ENABLE_EXT2=y" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_UFSD=n" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_EXT3=y" >> .config
@@ -133,9 +133,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> .config#
-        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=y" >> .config#
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >> .config#
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >> .config#
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SSWAN=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=n" >> .config#
